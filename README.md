@@ -50,7 +50,7 @@ company-website/
 
 ## 🚧 Current Status
 
-**Sprint 0** — Project initialization.
+**Sprint 2** — Project initialization.
 
 ---
 

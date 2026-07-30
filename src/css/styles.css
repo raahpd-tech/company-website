@@ -1,0 +1,522 @@
+/* ==========================================================
+   DESIGN TOKENS
+========================================================== */
+
+:root {
+
+    /* ========= Colores ========= */
+
+    --color-primary: #72886c;
+    --color-secondary: #a8b49e;
+    --color-accent: #bdcbc2;
+    --color-light: #ebe6dd;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-grey: #555;
+
+    /* ========= Tipografía ========= */
+
+    --font-primary: "Raleway", sans-serif;
+
+    /* ========= Espaciado ========= */
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+
+    /* Bordes */
+
+    --radius-sm:8px;
+    --radius-md:16px;
+    --radius-lg:24px;
+    --radius-pill:999px;
+
+    /* Sombras */
+
+    --shadow-sm:0 6px 18px rgba(0,0,0,.06);
+
+    --shadow-md:0 10px 25px rgba(0,0,0,.08);
+
+    --shadow-lg:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* ==========================================================
+   GENERAL
+========================================================== */
+
+body {
+
+    font-family: var(--font-primary);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    line-height: 1.6;
+
+}
+
+/* ==========================================================
+   CONTENEDOR GLOBAL
+========================================================== */
+
+.container {
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+header {
+
+    background-color: var(--color-white);
+
+}
+
+/* ==========================================================
+   NAVEGACIÓN
+========================================================== */
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: var(--space-md) 0;
+
+}
+
+/* ==========================================================
+   MARCA
+========================================================== */
+
+.brand h1 {
+
+    color: var(--color-primary);
+
+}
+
+
+.brand p {
+    color: var(--color-grey);
+    font-size: 1.1rem;
+    margin-top: -0.3rem;
+}
+
+/* ==========================================================
+   MENÚ
+========================================================== */
+
+.menu {
+
+    display: flex;
+    gap: var(--space-md);
+
+    list-style: none;
+
+}
+
+.menu a {
+
+    text-decoration: none;
+    color: var(--color-primary);
+
+    font-weight: 600;
+
+    transition: color .3s ease;
+
+}
+
+.menu a:hover {
+
+    color: var(--color-secondary);
+
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+#hero {
+
+    padding: var(--space-xl) 0;
+
+}
+
+#hero .container {
+
+    display: flex;
+    align-items: center;
+    gap: var(--space-xl);
+
+}
+
+#hero h2{
+
+
+
+    color:var(--color-primary);
+
+
+
+}
+
+#hero p{
+
+
+
+    color:var(--color-grey);
+
+
+
+}
+
+.hero-content {
+
+    flex: 2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-md);
+
+
+
+}
+
+.hero-image {
+
+    flex: 3;
+
+    height: 450px;
+
+    overflow: hidden;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:var(--radius-md);
+
+    object-fit:cover;
+
+    box-shadow:var(--shadow-md);
+
+}
+/* ==========================================================
+   BOTÓN
+========================================================== */
+
+.button{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:.9rem 1.8rem;
+
+    background-color:var(--color-primary);
+
+    color:var(--color-white);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    border-radius:var(--radius-pill);
+
+    width:fit-content;
+
+    transition:
+        background-color .3s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
+
+}
+
+.button:hover{
+
+    background-color:var(--color-secondary);
+
+}
+
+
+
+/* ==========================
+   ABOUT
+========================== */
+
+
+#about{
+
+    padding:var(--space-xl) 0;
+
+}
+
+.about-content h2{
+
+    font-size:2.5rem;
+
+    color:var(--color-primary);
+
+    line-height:1.2;
+
+}
+
+.about-content p{
+
+    line-height:1.8;
+
+    color:var(--color-grey);
+
+}
+
+#about .container{
+
+    display:flex;
+
+    gap:var(--space-xl);
+
+    align-items:center;
+
+}
+
+.about-image{
+
+    flex:1;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:var(--radius-md);
+
+    object-fit:cover;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.about-content{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-md);
+
+}
+
+.section-tag{
+
+    color:var(--color-primary);
+
+    font-weight:700;
+
+    letter-spacing:.12em;
+
+    font-size:.85rem;
+
+}
+
+/* ==========================
+   SERVICES
+========================== */
+
+#services{
+
+    padding:var(--space-xl) 0;
+
+}
+
+#services .container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+/* ---------- Encabezado ---------- */
+
+#services h2{
+
+    font-size:2.5rem;
+
+    color:var(--color-primary);
+
+    line-height:1.2;
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:1rem auto;
+
+}
+
+#services .section-description{
+
+    max-width:700px;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    color:var(--color-grey);
+
+    margin-bottom:var(--space-lg);
+
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.services-grid{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:2rem;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.service-card{
+
+    background-color:var(--color-white);
+
+    border-radius:var(--radius-md);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+/* ---------- Imagen ---------- */
+
+.service-card img{
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+/* ==========================
+   CONTENIDO
+========================== */
+
+.service-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.8rem;
+
+    padding:1.5rem;
+
+}
+
+/* ---------- Título ---------- */
+
+.service-content h3{
+
+    margin:0;
+
+    color:var(--color-primary);
+
+    font-size:1.35rem;
+
+}
+
+/* ---------- Texto ---------- */
+
+.service-content p{
+
+    margin:0;
+
+    color:var(--color-grey);
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:992px){
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #services h2{
+
+        font-size:2rem;
+
+    }
+
+}
+

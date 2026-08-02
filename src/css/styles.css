@@ -90,6 +90,7 @@ header {
 
 }
 
+
 /* ==========================================================
    NAVEGACIÓN
 ========================================================== */
@@ -519,4 +520,256 @@ nav {
     }
 
 }
+
+/* ==========================================================
+   RESPONSIVE - TABLET
+========================================================== */
+
+@media (max-width:992px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:var(--space-md);
+
+        text-align:center;
+
+    }
+
+    .menu{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:1.5rem;
+
+    }
+
+    #hero{
+
+        padding:var(--space-lg) 0;
+
+    }
+
+    #hero .container{
+
+        flex-direction:column;
+
+        gap:var(--space-lg);
+
+    }
+
+    .hero-content{
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .hero-image{
+
+        width:100%;
+
+        max-width:700px;
+
+        height:380px;
+
+    }
+
+    #about .container{
+
+        flex-direction:column;
+
+        gap:var(--space-lg);
+
+    }
+
+    .about-content{
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .about-image{
+
+        max-width:650px;
+
+    }
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================================================
+   RESPONSIVE - CELULAR
+========================================================== */
+
+@media (max-width:768px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+    nav{
+
+        gap:1.25rem;
+
+    }
+
+    .brand h1{
+
+        font-size:2rem;
+
+    }
+
+    .brand p{
+
+        font-size:.95rem;
+
+    }
+
+    .menu{
+
+        gap:1rem;
+
+    }
+
+    .menu a{
+
+        font-size:.95rem;
+
+    }
+
+    #hero{
+
+        padding:var(--space-lg) 0;
+
+    }
+
+    #hero h2{
+
+        font-size:2rem;
+
+        line-height:1.2;
+
+    }
+
+    .hero-image{
+
+        height:300px;
+
+    }
+
+    #about{
+
+        padding:var(--space-lg) 0;
+
+    }
+
+    .about-content h2{
+
+        font-size:2rem;
+
+    }
+
+    #services{
+
+        padding:var(--space-lg) 0;
+
+    }
+
+    #services h2{
+
+        font-size:2rem;
+
+    }
+
+    .service-card img{
+
+        height:260px;
+
+    }
+
+}
+
+/* ==========================================================
+   RESPONSIVE - CELULARES PEQUEÑOS
+========================================================== */
+
+@media (max-width:480px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+    .brand h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .brand p{
+
+        font-size:.9rem;
+
+    }
+
+    .menu{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:.75rem;
+
+    }
+
+    #hero h2{
+
+        font-size:1.7rem;
+
+    }
+
+    .hero-image{
+
+        height:230px;
+
+    }
+
+    .about-content h2{
+
+        font-size:1.7rem;
+
+    }
+
+    #services h2{
+
+        font-size:1.7rem;
+
+    }
+
+    .button{
+
+        width:100%;
+
+        max-width:300px;
+
+    }
+
+}
+
+
 

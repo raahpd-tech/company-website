@@ -28,18 +28,25 @@
 
     /* Bordes */
 
-    --radius-sm:8px;
-    --radius-md:16px;
-    --radius-lg:24px;
-    --radius-pill:999px;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-pill: 999px;
 
     /* Sombras */
 
-    --shadow-sm:0 6px 18px rgba(0,0,0,.06);
+    --shadow-sm: 0 6px 18px rgba(0, 0, 0, .06);
 
-    --shadow-md:0 10px 25px rgba(0,0,0,.08);
+    --shadow-md: 0 10px 25px rgba(0, 0, 0, .08);
 
-    --shadow-lg:0 18px 35px rgba(0,0,0,.12);
+    --shadow-lg: 0 18px 35px rgba(0, 0, 0, .12);
+
+    /* Footer */
+
+    --color-footer-text: #ffffff;
+    --color-footer-text-soft: #ebe6dd;
+    --color-footer-text-muted: #d6ddd1;
+    --color-footer-border: #8ea184;
 
 }
 
@@ -170,21 +177,21 @@ nav {
 
 }
 
-#hero h2{
+#hero h2 {
 
 
 
-    color:var(--color-primary);
+    color: var(--color-primary);
 
 
 
 }
 
-#hero p{
+#hero p {
 
 
 
-    color:var(--color-grey);
+    color: var(--color-grey);
 
 
 
@@ -214,44 +221,45 @@ nav {
 
 }
 
-.hero-image img{
+.hero-image img {
 
-    width:100%;
+    width: 100%;
 
-    display:block;
+    display: block;
 
-    border-radius:var(--radius-md);
+    border-radius: var(--radius-md);
 
-    object-fit:cover;
+    object-fit: cover;
 
-    box-shadow:var(--shadow-md);
+    box-shadow: var(--shadow-md);
 
 }
+
 /* ==========================================================
    BOTÓN
 ========================================================== */
 
-.button{
+.button {
 
-    display:inline-flex;
+    display: inline-flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
 
-    padding:.9rem 1.8rem;
+    padding: .9rem 1.8rem;
 
-    background-color:var(--color-primary);
+    background-color: var(--color-primary);
 
-    color:var(--color-white);
+    color: var(--color-white);
 
-    text-decoration:none;
+    text-decoration: none;
 
-    font-weight:600;
+    font-weight: 600;
 
-    border-radius:var(--radius-pill);
+    border-radius: var(--radius-pill);
 
-    width:fit-content;
+    width: fit-content;
 
     transition:
         background-color .3s ease,
@@ -260,9 +268,9 @@ nav {
 
 }
 
-.button:hover{
+.button:hover {
 
-    background-color:var(--color-secondary);
+    background-color: var(--color-secondary);
 
 }
 
@@ -273,81 +281,81 @@ nav {
 ========================== */
 
 
-#about{
+#about {
 
-    padding:var(--space-xl) 0;
-
-}
-
-.about-content h2{
-
-    font-size:2.5rem;
-
-    color:var(--color-primary);
-
-    line-height:1.2;
+    padding: var(--space-xl) 0;
 
 }
 
-.about-content p{
+.about-content h2 {
 
-    line-height:1.8;
+    font-size: 2.5rem;
 
-    color:var(--color-grey);
+    color: var(--color-primary);
 
-}
-
-#about .container{
-
-    display:flex;
-
-    gap:var(--space-xl);
-
-    align-items:center;
+    line-height: 1.2;
 
 }
 
-.about-image{
+.about-content p {
 
-    flex:1;
+    line-height: 1.8;
 
-}
-
-.about-image img{
-
-    width:100%;
-
-    display:block;
-
-    border-radius:var(--radius-md);
-
-    object-fit:cover;
-
-    box-shadow:var(--shadow-md);
+    color: var(--color-grey);
 
 }
 
-.about-content{
+#about .container {
 
-    flex:1;
+    display: flex;
 
-    display:flex;
+    gap: var(--space-xl);
 
-    flex-direction:column;
-
-    gap:var(--space-md);
+    align-items: center;
 
 }
 
-.section-tag{
+.about-image {
 
-    color:var(--color-primary);
+    flex: 1;
 
-    font-weight:700;
+}
 
-    letter-spacing:.12em;
+.about-image img {
 
-    font-size:.85rem;
+    width: 100%;
+
+    display: block;
+
+    border-radius: var(--radius-md);
+
+    object-fit: cover;
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.about-content {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-md);
+
+}
+
+.section-tag {
+
+    color: var(--color-primary);
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+    font-size: .85rem;
 
 }
 
@@ -355,51 +363,51 @@ nav {
    SERVICES
 ========================== */
 
-#services{
+#services {
 
-    padding:var(--space-xl) 0;
+    padding: var(--space-xl) 0;
 
 }
 
-#services .container{
+#services .container {
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
-    align-items:center;
+    align-items: center;
 
 }
 
 /* ---------- Encabezado ---------- */
 
-#services h2{
+#services h2 {
 
-    font-size:2.5rem;
+    font-size: 2.5rem;
 
-    color:var(--color-primary);
+    color: var(--color-primary);
 
-    line-height:1.2;
+    line-height: 1.2;
 
-    text-align:center;
+    text-align: center;
 
-    max-width:700px;
+    max-width: 700px;
 
-    margin:1rem auto;
+    margin: 1rem auto;
 
 }
 
-#services .section-description{
+#services .section-description {
 
-    max-width:700px;
+    max-width: 700px;
 
-    text-align:center;
+    text-align: center;
 
-    line-height:1.8;
+    line-height: 1.8;
 
-    color:var(--color-grey);
+    color: var(--color-grey);
 
-    margin-bottom:var(--space-lg);
+    margin-bottom: var(--space-lg);
 
 }
 
@@ -407,15 +415,15 @@ nav {
    GRID
 ========================== */
 
-.services-grid{
+.services-grid {
 
-    width:100%;
+    width: 100%;
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 
-    gap:2rem;
+    gap: 2rem;
 
 }
 
@@ -423,15 +431,15 @@ nav {
    CARD
 ========================== */
 
-.service-card{
+.service-card {
 
-    background-color:var(--color-white);
+    background-color: var(--color-white);
 
-    border-radius:var(--radius-md);
+    border-radius: var(--radius-md);
 
-    overflow:hidden;
+    overflow: hidden;
 
-    box-shadow:var(--shadow-md);
+    box-shadow: var(--shadow-md);
 
     transition:
         transform .3s ease,
@@ -439,25 +447,25 @@ nav {
 
 }
 
-.service-card:hover{
+.service-card:hover {
 
-    transform:translateY(-6px);
+    transform: translateY(-6px);
 
-    box-shadow:0 18px 35px rgba(0,0,0,.12);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
 
 }
 
 /* ---------- Imagen ---------- */
 
-.service-card img{
+.service-card img {
 
-    width:100%;
+    width: 100%;
 
-    aspect-ratio:4/3;
+    aspect-ratio: 4/3;
 
-    object-fit:cover;
+    object-fit: cover;
 
-    display:block;
+    display: block;
 
 }
 
@@ -465,39 +473,39 @@ nav {
    CONTENIDO
 ========================== */
 
-.service-content{
+.service-content {
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
-    gap:.8rem;
+    gap: .8rem;
 
-    padding:1.5rem;
+    padding: 1.5rem;
 
 }
 
 /* ---------- Título ---------- */
 
-.service-content h3{
+.service-content h3 {
 
-    margin:0;
+    margin: 0;
 
-    color:var(--color-primary);
+    color: var(--color-primary);
 
-    font-size:1.35rem;
+    font-size: 1.35rem;
 
 }
 
 /* ---------- Texto ---------- */
 
-.service-content p{
+.service-content p {
 
-    margin:0;
+    margin: 0;
 
-    color:var(--color-grey);
+    color: var(--color-grey);
 
-    line-height:1.7;
+    line-height: 1.7;
 
 }
 
@@ -505,51 +513,51 @@ nav {
    TEAM
 ========================== */
 
-#team{
+#team {
 
-    padding:var(--space-xl) 0;
+    padding: var(--space-xl) 0;
 
 }
 
-#team .container{
+#team .container {
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
-    align-items:center;
+    align-items: center;
 
 }
 
 /* ---------- Encabezado ---------- */
 
-#team h2{
+#team h2 {
 
-    font-size:2.5rem;
+    font-size: 2.5rem;
 
-    color:var(--color-primary);
+    color: var(--color-primary);
 
-    text-align:center;
+    text-align: center;
 
-    line-height:1.2;
+    line-height: 1.2;
 
-    max-width:700px;
+    max-width: 700px;
 
-    margin:1rem auto;
+    margin: 1rem auto;
 
 }
 
-#team .section-description{
+#team .section-description {
 
-    max-width:700px;
+    max-width: 700px;
 
-    text-align:center;
+    text-align: center;
 
-    color:var(--color-grey);
+    color: var(--color-grey);
 
-    line-height:1.8;
+    line-height: 1.8;
 
-    margin-bottom:var(--space-lg);
+    margin-bottom: var(--space-lg);
 
 }
 
@@ -557,15 +565,15 @@ nav {
    GRID
 ========================== */
 
-.team-grid{
+.team-grid {
 
-    width:100%;
+    width: 100%;
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 
-    gap:2rem;
+    gap: 2rem;
 
 }
 
@@ -573,15 +581,15 @@ nav {
    CARD
 ========================== */
 
-.team-card{
+.team-card {
 
-    background:var(--color-white);
+    background: var(--color-white);
 
-    border-radius:var(--radius-md);
+    border-radius: var(--radius-md);
 
-    overflow:hidden;
+    overflow: hidden;
 
-    box-shadow:var(--shadow-md);
+    box-shadow: var(--shadow-md);
 
     transition:
         transform .3s ease,
@@ -589,11 +597,11 @@ nav {
 
 }
 
-.team-card:hover{
+.team-card:hover {
 
-    transform:translateY(-6px);
+    transform: translateY(-6px);
 
-    box-shadow:0 18px 35px rgba(0,0,0,.12);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
 
 }
 
@@ -601,15 +609,15 @@ nav {
    FOTO
 ========================== */
 
-.team-card img{
+.team-card img {
 
-    width:100%;
+    width: 100%;
 
-    aspect-ratio:4/5;
+    aspect-ratio: 4/5;
 
-    object-fit:cover;
+    object-fit: cover;
 
-    display:block;
+    display: block;
 
 }
 
@@ -617,61 +625,499 @@ nav {
    CONTENIDO
 ========================== */
 
-.team-content{
+.team-content {
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
-    gap:1rem;
+    gap: 1rem;
 
-    padding:1.8rem;
+    padding: 1.8rem;
 
 }
 
 /* ---------- Nombre ---------- */
 
-.team-content h3{
+.team-content h3 {
 
-    margin:0;
+    margin: 0;
 
-    color:var(--color-primary);
+    color: var(--color-primary);
 
-    font-size:1.5rem;
+    font-size: 1.5rem;
 
 }
 
 /* ---------- Frase ---------- */
 
-.team-content blockquote{
+.team-content blockquote {
 
-    margin:0;
+    margin: 0;
 
-    padding-left:1rem;
+    padding-left: 1rem;
 
-    border-left:4px solid var(--color-accent);
+    border-left: 4px solid var(--color-accent);
 
-    color:var(--color-grey);
+    color: var(--color-grey);
 
-    font-size:1.05rem;
+    font-size: 1.05rem;
 
-    line-height:1.8;
+    line-height: 1.8;
 
-    font-style:italic;
+    font-style: italic;
 
 }
 
 /* ---------- Formación ---------- */
 
-.team-credentials{
+.team-credentials {
 
-    margin-top:auto;
+    margin-top: auto;
 
-    color:var(--color-grey);
+    color: var(--color-grey);
 
-    font-size:.95rem;
+    font-size: .95rem;
 
-    line-height:1.7;
+    line-height: 1.7;
+
+}
+
+/* ==========================
+   FAQ
+========================== */
+
+#faq {
+
+    padding: var/(--space-x1)0;
+
+}
+
+#faq.container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+
+}
+
+/* ---------- Encabezado ---------- */
+
+#faq h2 {
+
+    font-size: 2.5rem;
+
+    color: var(--color-primary);
+
+    text-align: center;
+
+    line-height: 1.2;
+
+    max-width: 700px;
+
+    margin: 1rem auto .8rem;
+
+
+
+}
+
+#faq .section-description {
+
+    max-width: 600px;
+
+    margin: 0 auto var(--space-lg);
+
+    text-align: center;
+
+    line-height: 1.8;
+
+    color: var(--color-grey);
+
+}
+
+/* ==========================
+   LISTA
+========================== */
+
+.faq-list {
+
+    width: 100%;
+
+    max-width: 850px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+/* ==========================
+   ITEM
+========================== */
+
+.faq-item {
+
+    background: var(--color-white);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-md);
+
+    overflow: hidden;
+
+}
+
+.faq-item h3 {
+
+    margin: 0;
+
+    padding: 1.5rem;
+
+    color: var(--color-primary);
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+.faq-item p {
+
+    margin: 0;
+
+    padding: 0 1.5rem 1.5rem;
+
+    color: var(--color-grey);
+
+    line-height: 1.8;
+
+}
+
+.faq-item {
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+.faq-item:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+#contact {
+
+    padding: var(--space-xl) 0;
+
+    background-color: var(--color-light);
+
+}
+
+#contact .container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+/* ---------- Encabezado ---------- */
+
+#contact h2 {
+
+    font-size: 2.5rem;
+
+    color: var(--color-primary);
+
+    text-align: center;
+
+    line-height: 1.2;
+
+    max-width: 650px;
+
+    margin: 1rem auto .8rem;
+
+}
+
+#contact .section-description {
+
+    max-width: 620px;
+
+    margin: 0 auto var(--space-xl);
+
+    text-align: center;
+
+    color: var(--color-grey);
+
+    line-height: 1.8;
+
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.contact-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 3rem;
+
+    align-items: start;
+
+}
+
+/* ==========================
+   INFORMACIÓN
+========================== */
+
+.contact-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2rem;
+
+}
+
+.contact-item h3 {
+
+    margin-bottom: .5rem;
+
+    color: var(--color-primary);
+
+    font-size: 1.2rem;
+
+}
+
+.contact-item p {
+
+    color: var(--color-grey);
+
+    line-height: 1.8;
+
+}
+
+/* ==========================
+   CONTACT CARD
+========================== */
+
+.contact-card {
+
+    background-color: var(--color-white);
+
+    border-radius: var(--radius-md);
+
+    padding: 2.5rem;
+
+    box-shadow: var(--shadow-md);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.3rem;
+
+}
+
+.contact-card h3 {
+
+    color: var(--color-primary);
+
+    font-size: 1.8rem;
+
+}
+
+.contact-card p {
+
+    color: var(--color-grey);
+
+    line-height: 1.8;
+
+}
+
+.contact-highlight {
+
+    font-weight: 600;
+
+    color: var(--color-primary);
+
+}
+
+.contact-card .button {
+
+    align-self: flex-start;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+#footer{
+
+    background-color: var(--color-primary);
+
+    color: var(--color-footer-text);
+
+    padding: var(--space-xl) 0 0;
+
+}
+
+/* ==========================
+   GRID
+========================== */
+
+#footer .container{
+
+    display: grid;
+
+    grid-template-columns: 1.6fr 1fr .9fr;
+
+    gap: var(--space-xl);
+
+    align-items: start;
+
+}
+
+/* ==========================
+   BRAND
+========================== */
+
+.footer-brand h2{
+
+    font-size: 2.4rem;
+
+    color: var(--color-footer-text);
+
+    margin-bottom: var(--space-sm);
+
+}
+
+.footer-brand p{
+
+    color: var(--color-footer-text-soft);
+
+    line-height: 1.8;
+
+    max-width: 300px;
+
+}
+
+/* ==========================
+   NAV Y REDES
+========================== */
+
+.footer-nav,
+.footer-social{
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.footer-nav{
+
+    justify-self: center;
+
+}
+
+.footer-nav h3,
+.footer-social h3{
+
+    margin-bottom: var(--space-md);
+
+    font-size: 1.1rem;
+
+    color: var(--color-footer-text);
+
+}
+
+.footer-nav ul,
+.footer-social ul{
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-sm);
+
+}
+
+/* ==========================
+   ENLACES
+========================== */
+
+#footer a{
+
+    color: var(--color-footer-text-soft);
+
+    text-decoration: none;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+
+}
+
+#footer a:hover{
+
+    color: var(--color-footer-text);
+
+    transform: translateX(6px);
+
+}
+
+/* ==========================
+   FOOTER BOTTOM
+========================== */
+
+.footer-bottom{
+
+    margin-top: var(--space-xl);
+
+    padding: var(--space-md) 0;
+
+    border-top: 1px solid var(--color-footer-border);
+
+    text-align: center;
+
+}
+
+.footer-bottom p{
+
+    color: var(--color-footer-text-muted);
+
+    font-size: .9rem;
 
 }
 
@@ -679,17 +1125,17 @@ nav {
    RESPONSIVE
 ========================== */
 
-@media (max-width:992px){
+@media (max-width:992px) {
 
-    .services-grid{
+    .services-grid {
 
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
     }
 
-    #services h2{
+    #services h2 {
 
-        font-size:2rem;
+        font-size: 2rem;
 
     }
 
@@ -699,85 +1145,85 @@ nav {
    RESPONSIVE - TABLET
 ========================================================== */
 
-@media (max-width:992px){
+@media (max-width:992px) {
 
-    nav{
+    nav {
 
-        flex-direction:column;
+        flex-direction: column;
 
-        gap:var(--space-md);
+        gap: var(--space-md);
 
-        text-align:center;
-
-    }
-
-    .menu{
-
-        justify-content:center;
-
-        flex-wrap:wrap;
-
-        gap:1.5rem;
+        text-align: center;
 
     }
 
-    #hero{
+    .menu {
 
-        padding:var(--space-lg) 0;
+        justify-content: center;
 
-    }
+        flex-wrap: wrap;
 
-    #hero .container{
-
-        flex-direction:column;
-
-        gap:var(--space-lg);
+        gap: 1.5rem;
 
     }
 
-    .hero-content{
+    #hero {
 
-        text-align:center;
-
-        align-items:center;
+        padding: var(--space-lg) 0;
 
     }
 
-    .hero-image{
+    #hero .container {
 
-        width:100%;
+        flex-direction: column;
 
-        max-width:700px;
-
-        height:380px;
+        gap: var(--space-lg);
 
     }
 
-    #about .container{
+    .hero-content {
 
-        flex-direction:column;
+        text-align: center;
 
-        gap:var(--space-lg);
-
-    }
-
-    .about-content{
-
-        text-align:center;
-
-        align-items:center;
+        align-items: center;
 
     }
 
-    .about-image{
+    .hero-image {
 
-        max-width:650px;
+        width: 100%;
+
+        max-width: 700px;
+
+        height: 380px;
 
     }
 
-    .services-grid{
+    #about .container {
 
-        grid-template-columns:1fr;
+        flex-direction: column;
+
+        gap: var(--space-lg);
+
+    }
+
+    .about-content {
+
+        text-align: center;
+
+        align-items: center;
+
+    }
+
+    .about-image {
+
+        max-width: 650px;
+
+    }
+
+    .services-grid {
+
+        grid-template-columns: 1fr;
 
     }
 
@@ -787,91 +1233,91 @@ nav {
    RESPONSIVE - CELULAR
 ========================================================== */
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .container{
+    .container {
 
-        width:92%;
-
-    }
-
-    nav{
-
-        gap:1.25rem;
+        width: 92%;
 
     }
 
-    .brand h1{
+    nav {
 
-        font-size:2rem;
-
-    }
-
-    .brand p{
-
-        font-size:.95rem;
+        gap: 1.25rem;
 
     }
 
-    .menu{
+    .brand h1 {
 
-        gap:1rem;
-
-    }
-
-    .menu a{
-
-        font-size:.95rem;
+        font-size: 2rem;
 
     }
 
-    #hero{
+    .brand p {
 
-        padding:var(--space-lg) 0;
-
-    }
-
-    #hero h2{
-
-        font-size:2rem;
-
-        line-height:1.2;
+        font-size: .95rem;
 
     }
 
-    .hero-image{
+    .menu {
 
-        height:300px;
-
-    }
-
-    #about{
-
-        padding:var(--space-lg) 0;
+        gap: 1rem;
 
     }
 
-    .about-content h2{
+    .menu a {
 
-        font-size:2rem;
-
-    }
-
-    #services{
-
-        padding:var(--space-lg) 0;
+        font-size: .95rem;
 
     }
 
-    #services h2{
+    #hero {
 
-        font-size:2rem;
+        padding: var(--space-lg) 0;
 
     }
 
-    .service-card img{
+    #hero h2 {
 
-        height:260px;
+        font-size: 2rem;
+
+        line-height: 1.2;
+
+    }
+
+    .hero-image {
+
+        height: 300px;
+
+    }
+
+    #about {
+
+        padding: var(--space-lg) 0;
+
+    }
+
+    .about-content h2 {
+
+        font-size: 2rem;
+
+    }
+
+    #services {
+
+        padding: var(--space-lg) 0;
+
+    }
+
+    #services h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .service-card img {
+
+        height: 260px;
 
     }
 
@@ -881,65 +1327,65 @@ nav {
    RESPONSIVE - CELULARES PEQUEÑOS
 ========================================================== */
 
-@media (max-width:480px){
+@media (max-width:480px) {
 
-    .container{
+    .container {
 
-        width:94%;
-
-    }
-
-    .brand h1{
-
-        font-size:1.7rem;
+        width: 94%;
 
     }
 
-    .brand p{
+    .brand h1 {
 
-        font-size:.9rem;
-
-    }
-
-    .menu{
-
-        flex-direction:column;
-
-        align-items:center;
-
-        gap:.75rem;
+        font-size: 1.7rem;
 
     }
 
-    #hero h2{
+    .brand p {
 
-        font-size:1.7rem;
-
-    }
-
-    .hero-image{
-
-        height:230px;
+        font-size: .9rem;
 
     }
 
-    .about-content h2{
+    .menu {
 
-        font-size:1.7rem;
+        flex-direction: column;
 
-    }
+        align-items: center;
 
-    #services h2{
-
-        font-size:1.7rem;
+        gap: .75rem;
 
     }
 
-    .button{
+    #hero h2 {
 
-        width:100%;
+        font-size: 1.7rem;
 
-        max-width:300px;
+    }
+
+    .hero-image {
+
+        height: 230px;
+
+    }
+
+    .about-content h2 {
+
+        font-size: 1.7rem;
+
+    }
+
+    #services h2 {
+
+        font-size: 1.7rem;
+
+    }
+
+    .button {
+
+        width: 100%;
+
+        max-width: 300px;
 
     }
 
@@ -949,15 +1395,15 @@ nav {
    TEAM - TABLET
 ========================================================== */
 
-@media (max-width:992px){
+@media (max-width:992px) {
 
-    .team-grid{
+    .team-grid {
 
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
-        max-width:650px;
+        max-width: 650px;
 
-        margin:0 auto;
+        margin: 0 auto;
 
     }
 
@@ -967,63 +1413,63 @@ nav {
    TEAM - CELULAR
 ========================================================== */
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    #team{
+    #team {
 
-        padding:var(--space-lg) 0;
-
-    }
-
-    #team h2{
-
-        font-size:2rem;
+        padding: var(--space-lg) 0;
 
     }
 
-    #team .section-description{
+    #team h2 {
 
-        font-size:1rem;
-
-        margin-bottom:var(--space-md);
+        font-size: 2rem;
 
     }
 
-    .team-grid{
+    #team .section-description {
 
-        grid-template-columns:1fr;
+        font-size: 1rem;
 
-        gap:1.5rem;
-
-    }
-
-    .team-card img{
-
-        aspect-ratio:4/3;
+        margin-bottom: var(--space-md);
 
     }
 
-    .team-content{
+    .team-grid {
 
-        padding:1.5rem;
+        grid-template-columns: 1fr;
 
-    }
-
-    .team-content h3{
-
-        font-size:1.35rem;
+        gap: 1.5rem;
 
     }
 
-    .team-content blockquote{
+    .team-card img {
 
-        font-size:1rem;
+        aspect-ratio: 4/3;
 
     }
 
-    .team-credentials{
+    .team-content {
 
-        font-size:.9rem;
+        padding: 1.5rem;
+
+    }
+
+    .team-content h3 {
+
+        font-size: 1.35rem;
+
+    }
+
+    .team-content blockquote {
+
+        font-size: 1rem;
+
+    }
+
+    .team-credentials {
+
+        font-size: .9rem;
 
     }
 
@@ -1033,28 +1479,199 @@ nav {
    TEAM - CELULARES PEQUEÑOS
 ========================================================== */
 
-@media (max-width:480px){
+@media (max-width:480px) {
 
-    #team h2{
+    #team h2 {
 
-        font-size:1.7rem;
-
-    }
-
-    .team-content{
-
-        padding:1.2rem;
-
-        gap:.8rem;
+        font-size: 1.7rem;
 
     }
 
-    .team-card img{
+    .team-content {
 
-        aspect-ratio:1/1;
+        padding: 1.2rem;
+
+        gap: .8rem;
+
+    }
+
+    .team-card img {
+
+        aspect-ratio: 1/1;
+
+    }
+
+}
+
+/* ==========================================================
+   FAQ - TABLET
+========================================================== */
+
+@media(max-width:768px) {
+
+    #faq {
+
+        padding: var(--space-lg) 0;
+
+    }
+
+    #faq h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .faq-item h3 {
+
+        font-size: 1.05rem;
+
+        padding: 1.2rem;
+
+    }
+
+    .faq-item p {
+
+        padding: 0 1.2rem 1.2rem;
+
+    }
+
+}
+
+/* ==========================================================
+   FAQ - CELULARES PEQUEÑOS
+========================================================== */
+
+@media(max-width:480px) {
+
+    #faq h2 {
+
+        font-size: 1.7rem;
+
+    }
+
+    .faq-item h3 {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/* ==========================================================
+   RESPONSIVE - TABLET
+========================================================== */
+
+@media(max-width:992px) {
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 2.5rem;
+
+    }
+
+    .contact-card {
+
+        max-width: 500px;
+
+    }
+
+}
+
+/* ==========================================================
+   TEAM - CELULAR
+========================================================== */
+
+@media(max-width:768px) {
+
+    #contact {
+
+        padding: var(--space-lg) 0;
+
+    }
+
+    #contact h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .contact-card {
+
+        padding: 2rem;
+
+    }
+
+}
+
+/* ==========================================================
+   FAQ - CELULARES PEQUEÑOS
+========================================================== */
+
+@media(max-width:480px) {
+
+    #contact h2 {
+
+        font-size: 1.7rem;
+
+    }
+
+    .contact-card {
+
+        padding: 1.5rem;
+
+    }
+
+    .contact-card .button {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+}
+
+/* ==========================================================
+   FOOTER - CELULARES PEQUEÑOS
+========================================================== */
+@media(max-width:768px) {
+
+    #footer {
+
+        padding: var(--space-lg) 0 0;
+
+    }
+
+    .footer-brand h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+    .footer-nav li,
+    .footer-social li {
+
+        margin-bottom: .7rem;
 
     }
 
 }
 
 
+@media(max-width:992px) {
+
+    .footer-brand,
+    .footer-nav,
+    .footer-social {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+}

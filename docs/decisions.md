@@ -19,3 +19,40 @@ sans-serif.
 ### Motivo
 
 Garantizar una correcta visualización si la fuente principal no puede descargarse.
+
+## Principios de diseño
+
+- Cercanía.
+- Profesionalismo.
+- Bienestar.
+- Confianza.
+
+## Colores
+
+...
+
+## Tipografía
+
+...
+
+## Espaciado
+
+...
+
+## Bordes
+
+Las imágenes utilizan bordes redondeados para transmitir
+cercanía y suavidad.
+
+Los botones utilizan bordes completamente redondeados
+(tipo píldora) para reforzar una llamada a la acción amable.
+
+## Componentes
+
+Botón
+
+Tarjeta
+
+Imagen
+
+Navegación

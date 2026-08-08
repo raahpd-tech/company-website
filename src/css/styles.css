@@ -362,77 +362,77 @@ nav {
    ABOUT
 ========================== */
 
-#about{
+#about {
 
-    padding:var(--space-xl) 0;
-
-}
-
-#about .container{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:var(--space-xl);
+    padding: var(--space-xl) 0;
 
 }
 
-.about-image{
+#about .container {
 
-    flex:1;
+    display: flex;
 
-}
+    align-items: center;
 
-.about-image img{
-
-    width:100%;
-
-    border-radius:var(--radius-md);
-
-    box-shadow:var(--shadow-md);
+    gap: var(--space-xl);
 
 }
 
-.about-content{
+.about-image {
 
-    flex:1;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:var(--space-md);
+    flex: 1;
 
 }
 
-.about-content h2{
+.about-image img {
 
-    font-size:2.5rem;
+    width: 100%;
 
-    color:var(--color-primary);
+    border-radius: var(--radius-md);
 
-    line-height:1.2;
-
-}
-
-.about-content p{
-
-    line-height:1.8;
+    box-shadow: var(--shadow-md);
 
 }
 
-.section-tag{
+.about-content {
 
-    color:var(--color-primary);
+    flex: 1;
 
-    font-weight:700;
+    display: flex;
 
-    letter-spacing:.12em;
+    flex-direction: column;
 
-    font-size:.85rem;
+    gap: var(--space-md);
 
-    text-transform:uppercase;
+}
+
+.about-content h2 {
+
+    font-size: 2.5rem;
+
+    color: var(--color-primary);
+
+    line-height: 1.2;
+
+}
+
+.about-content p {
+
+    line-height: 1.8;
+
+}
+
+.section-tag {
+
+    color: var(--color-primary);
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+    font-size: .85rem;
+
+    text-transform: uppercase;
 
 }
 
@@ -440,47 +440,47 @@ nav {
    SERVICES
 ========================== */
 
-#services{
+#services {
 
-    padding:var(--space-xl) 0;
+    padding: var(--space-xl) 0;
 
 }
 
-#services .container{
+#services .container {
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
-    align-items:center;
+    align-items: center;
 
-    gap:var(--space-md);
+    gap: var(--space-md);
 
 }
 
 /* ---------- Encabezado ---------- */
 
-#services h2{
+#services h2 {
 
-    font-size:2.5rem;
+    font-size: 2.5rem;
 
-    color:var(--color-primary);
+    color: var(--color-primary);
 
-    line-height:1.2;
+    line-height: 1.2;
 
-    text-align:center;
+    text-align: center;
 
-    max-width:700px;
+    max-width: 700px;
 
 }
 
-#services .section-description{
+#services .section-description {
 
-    max-width:700px;
+    max-width: 700px;
 
-    text-align:center;
+    text-align: center;
 
-    line-height:1.8;
+    line-height: 1.8;
 
 }
 
@@ -488,15 +488,15 @@ nav {
    GRID
 ========================== */
 
-.services-grid{
+.services-grid {
 
-    width:100%;
+    width: 100%;
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 
-    gap:var(--space-md);
+    gap: var(--space-md);
 
 }
 
@@ -504,15 +504,15 @@ nav {
    CARD
 ========================== */
 
-.service-card{
+.service-card {
 
-    background-color:var(--color-white);
+    background-color: var(--color-white);
 
-    border-radius:var(--radius-md);
+    border-radius: var(--radius-md);
 
-    overflow:hidden;
+    overflow: hidden;
 
-    box-shadow:var(--shadow-md);
+    box-shadow: var(--shadow-md);
 
     transition:
         transform var(--transition-fast),
@@ -520,23 +520,23 @@ nav {
 
 }
 
-.service-card:hover{
+.service-card:hover {
 
-    transform:translateY(-6px);
+    transform: translateY(-6px);
 
-    box-shadow:var(--shadow-lg);
+    box-shadow: var(--shadow-lg);
 
 }
 
 /* ---------- Imagen ---------- */
 
-.service-card img{
+.service-card img {
 
-    width:100%;
+    width: 100%;
 
-    aspect-ratio:4/3;
+    aspect-ratio: 4/3;
 
-    object-fit:cover;
+    object-fit: cover;
 
 }
 
@@ -544,37 +544,37 @@ nav {
    CONTENIDO
 ========================== */
 
-.service-content{
+.service-content {
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
-    gap:.8rem;
+    gap: .8rem;
 
-    padding:1.5rem;
+    padding: 1.5rem;
 
 }
 
 /* ---------- Título ---------- */
 
-.service-content h3{
+.service-content h3 {
 
-    margin:0;
+    margin: 0;
 
-    color:var(--color-primary);
+    color: var(--color-primary);
 
-    font-size:1.35rem;
+    font-size: 1.35rem;
 
 }
 
 /* ---------- Texto ---------- */
 
-.service-content p{
+.service-content p {
 
-    margin:0;
+    margin: 0;
 
-    line-height:1.7;
+    line-height: 1.7;
 
 }
 
@@ -596,6 +596,8 @@ nav {
 
     align-items: center;
 
+    gap: var(--space-md);
+
 }
 
 /* ---------- Encabezado ---------- */
@@ -612,8 +614,6 @@ nav {
 
     max-width: 700px;
 
-    margin: 1rem auto;
-
 }
 
 #team .section-description {
@@ -622,11 +622,7 @@ nav {
 
     text-align: center;
 
-    color: var(--color-grey);
-
     line-height: 1.8;
-
-    margin-bottom: var(--space-lg);
 
 }
 
@@ -642,7 +638,7 @@ nav {
 
     grid-template-columns: repeat(2, 1fr);
 
-    gap: 2rem;
+    gap: var(--space-md);
 
 }
 
@@ -661,8 +657,8 @@ nav {
     box-shadow: var(--shadow-md);
 
     transition:
-        transform .3s ease,
-        box-shadow .3s ease;
+        transform var(--transition-fast),
+        box-shadow var(--transition-fast);
 
 }
 
@@ -670,7 +666,7 @@ nav {
 
     transform: translateY(-6px);
 
-    box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
+    box-shadow: var(--shadow-lg);
 
 }
 
@@ -685,8 +681,6 @@ nav {
     aspect-ratio: 4/5;
 
     object-fit: cover;
-
-    display: block;
 
 }
 
@@ -744,8 +738,6 @@ nav {
 
     margin-top: auto;
 
-    color: var(--color-grey);
-
     font-size: .95rem;
 
     line-height: 1.7;
@@ -758,11 +750,11 @@ nav {
 
 #faq {
 
-    padding: var/(--space-x1)0;
+    padding: var(--space-xl) 0;
 
 }
 
-#faq.container {
+#faq .container {
 
     display: flex;
 
@@ -770,6 +762,7 @@ nav {
 
     align-items: center;
 
+    gap: var(--space-md);
 
 }
 
@@ -787,23 +780,15 @@ nav {
 
     max-width: 700px;
 
-    margin: 1rem auto .8rem;
-
-
-
 }
 
 #faq .section-description {
 
     max-width: 600px;
 
-    margin: 0 auto var(--space-lg);
-
     text-align: center;
 
     line-height: 1.8;
-
-    color: var(--color-grey);
 
 }
 
@@ -821,7 +806,7 @@ nav {
 
     flex-direction: column;
 
-    gap: 1rem;
+    gap: var(--space-sm);
 
 }
 
@@ -838,6 +823,18 @@ nav {
     box-shadow: var(--shadow-md);
 
     overflow: hidden;
+
+    transition:
+        transform var(--transition-fast),
+        box-shadow var(--transition-fast);
+
+}
+
+.faq-item:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-lg);
 
 }
 
@@ -863,25 +860,7 @@ nav {
 
     padding: 0 1.5rem 1.5rem;
 
-    color: var(--color-grey);
-
     line-height: 1.8;
-
-}
-
-.faq-item {
-
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease;
-
-}
-
-.faq-item:hover {
-
-    transform: translateY(-3px);
-
-    box-shadow: var(--shadow-md);
 
 }
 
@@ -905,6 +884,8 @@ nav {
 
     align-items: center;
 
+    gap: var(--space-md);
+
 }
 
 /* ---------- Encabezado ---------- */
@@ -921,19 +902,13 @@ nav {
 
     max-width: 650px;
 
-    margin: 1rem auto .8rem;
-
 }
 
 #contact .section-description {
 
     max-width: 620px;
 
-    margin: 0 auto var(--space-xl);
-
     text-align: center;
-
-    color: var(--color-grey);
 
     line-height: 1.8;
 
@@ -967,7 +942,7 @@ nav {
 
     flex-direction: column;
 
-    gap: 2rem;
+    gap: var(--space-md);
 
 }
 
@@ -982,8 +957,6 @@ nav {
 }
 
 .contact-item p {
-
-    color: var(--color-grey);
 
     line-height: 1.8;
 
@@ -1021,10 +994,12 @@ nav {
 
 .contact-card p {
 
-    color: var(--color-grey);
-
     line-height: 1.8;
 
+}
+
+.contact-grid {
+    grid-template-columns: 1fr 1fr;
 }
 
 .contact-highlight {
@@ -1036,9 +1011,8 @@ nav {
 }
 
 .contact-card .button {
-
     align-self: flex-start;
-
+    padding: .85rem 1.6rem;
 }
 
 /* ==========================
@@ -1193,107 +1167,142 @@ nav {
 /* ==========================
    RESPONSIVE
 ========================== */
-
-@media (max-width:992px) {
-
-    .services-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-    #services h2 {
-
-        font-size: 2rem;
-
-    }
-
-}
-
 /* ==========================================================
    RESPONSIVE - TABLET
 ========================================================== */
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
+
+    /* ==========================
+       GENERAL
+    ========================== */
+
+    .container {
+        width: 90%;
+    }
+
+
+    /* ==========================
+       HEADER
+    ========================== */
 
     nav {
-
-        flex-direction: column;
-
         gap: var(--space-md);
-
-        text-align: center;
-
     }
 
     .menu {
-
-        justify-content: center;
-
+        gap: 1.25rem;
         flex-wrap: wrap;
-
-        gap: 1.5rem;
-
+        justify-content: flex-end;
     }
 
+
+    /* ==========================
+       HERO
+    ========================== */
+
     #hero {
-
         padding: var(--space-lg) 0;
-
     }
 
     #hero .container {
-
-        flex-direction: column;
-
         gap: var(--space-lg);
-
     }
 
     .hero-content {
-
-        text-align: center;
-
-        align-items: center;
-
+        flex: 1;
     }
 
     .hero-image {
-
-        width: 100%;
-
-        max-width: 700px;
-
+        flex: 1;
         height: 380px;
+    }
 
+
+    /* ==========================
+       ABOUT
+    ========================== */
+
+    #about {
+        padding: var(--space-lg) 0;
     }
 
     #about .container {
-
-        flex-direction: column;
-
         gap: var(--space-lg);
-
     }
 
+    .about-image,
     .about-content {
-
-        text-align: center;
-
-        align-items: center;
-
+        flex: 1;
     }
 
-    .about-image {
 
-        max-width: 650px;
-
-    }
+    /* ==========================
+       SERVICES
+    ========================== */
 
     .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
 
-        grid-template-columns: 1fr;
+    #services h2 {
+        font-size: 2.2rem;
+    }
 
+
+    /* ==========================
+       TEAM
+    ========================== */
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    #team h2 {
+        font-size: 2.2rem;
+    }
+
+
+    /* ==========================
+       FAQ
+    ========================== */
+
+    #faq h2 {
+        font-size: 2.2rem;
+    }
+
+    .faq-list {
+        max-width: 800px;
+    }
+
+
+    /* ==========================
+       CONTACT
+    ========================== */
+
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    #contact h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact-card {
+        padding: 2rem;
+    }
+
+
+    /* ==========================
+       FOOTER
+    ========================== */
+
+    #footer .container {
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: var(--space-lg);
     }
 
 }
@@ -1302,445 +1311,336 @@ nav {
    RESPONSIVE - CELULAR
 ========================================================== */
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+
+    /* ==========================
+       GENERAL
+    ========================== */
 
     .container {
-
         width: 92%;
-
     }
 
+
+    /* ==========================
+       HEADER
+    ========================== */
+
     nav {
-
         gap: 1.25rem;
-
     }
 
     .brand h1 {
-
         font-size: 2rem;
-
     }
 
     .brand p {
-
         font-size: .95rem;
-
     }
 
     .menu {
-
         gap: 1rem;
-
     }
 
     .menu a {
-
         font-size: .95rem;
-
     }
+
+
+    /* ==========================
+       HERO
+    ========================== */
 
     #hero {
-
         padding: var(--space-lg) 0;
-
     }
 
-    #hero h2 {
-
+    #hero h1 {
         font-size: 2rem;
-
         line-height: 1.2;
-
     }
 
     .hero-image {
-
         height: 300px;
-
     }
 
+
+    /* ==========================
+       ABOUT
+    ========================== */
+
     #about {
-
         padding: var(--space-lg) 0;
-
     }
 
     .about-content h2 {
-
         font-size: 2rem;
-
     }
 
+
+    /* ==========================
+       SERVICES
+    ========================== */
+
     #services {
-
         padding: var(--space-lg) 0;
-
     }
 
     #services h2 {
-
         font-size: 2rem;
-
     }
 
     .service-card img {
-
         height: 260px;
-
     }
 
-}
 
-/* ==========================================================
-   RESPONSIVE - CELULARES PEQUEÑOS
-========================================================== */
-
-@media (max-width:480px) {
-
-    .container {
-
-        width: 94%;
-
-    }
-
-    .brand h1 {
-
-        font-size: 1.7rem;
-
-    }
-
-    .brand p {
-
-        font-size: .9rem;
-
-    }
-
-    .menu {
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: .75rem;
-
-    }
-
-    #hero h2 {
-
-        font-size: 1.7rem;
-
-    }
-
-    .hero-image {
-
-        height: 230px;
-
-    }
-
-    .about-content h2 {
-
-        font-size: 1.7rem;
-
-    }
-
-    #services h2 {
-
-        font-size: 1.7rem;
-
-    }
-
-    .button {
-
-        width: 100%;
-
-        max-width: 300px;
-
-    }
-
-}
-
-/* ==========================================================
-   TEAM - TABLET
-========================================================== */
-
-@media (max-width:992px) {
-
-    .team-grid {
-
-        grid-template-columns: 1fr;
-
-        max-width: 650px;
-
-        margin: 0 auto;
-
-    }
-
-}
-
-/* ==========================================================
-   TEAM - CELULAR
-========================================================== */
-
-@media (max-width:768px) {
+    /* ==========================
+       TEAM
+    ========================== */
 
     #team {
-
         padding: var(--space-lg) 0;
-
     }
 
     #team h2 {
-
         font-size: 2rem;
-
     }
 
     #team .section-description {
-
         font-size: 1rem;
-
         margin-bottom: var(--space-md);
-
     }
 
     .team-grid {
-
         grid-template-columns: 1fr;
-
         gap: 1.5rem;
-
     }
 
     .team-card img {
-
-        aspect-ratio: 4/3;
-
+        aspect-ratio: 4 / 3;
     }
 
     .team-content {
-
         padding: 1.5rem;
-
     }
 
     .team-content h3 {
-
         font-size: 1.35rem;
-
     }
 
     .team-content blockquote {
-
         font-size: 1rem;
-
     }
 
     .team-credentials {
-
         font-size: .9rem;
-
     }
 
-}
 
-/* ==========================================================
-   TEAM - CELULARES PEQUEÑOS
-========================================================== */
-
-@media (max-width:480px) {
-
-    #team h2 {
-
-        font-size: 1.7rem;
-
-    }
-
-    .team-content {
-
-        padding: 1.2rem;
-
-        gap: .8rem;
-
-    }
-
-    .team-card img {
-
-        aspect-ratio: 1/1;
-
-    }
-
-}
-
-/* ==========================================================
-   FAQ - TABLET
-========================================================== */
-
-@media(max-width:768px) {
+    /* ==========================
+       FAQ
+    ========================== */
 
     #faq {
-
         padding: var(--space-lg) 0;
-
     }
 
     #faq h2 {
-
         font-size: 2rem;
-
     }
 
     .faq-item h3 {
-
         font-size: 1.05rem;
-
         padding: 1.2rem;
-
     }
 
     .faq-item p {
-
         padding: 0 1.2rem 1.2rem;
-
     }
 
-}
 
-/* ==========================================================
-   FAQ - CELULARES PEQUEÑOS
-========================================================== */
-
-@media(max-width:480px) {
-
-    #faq h2 {
-
-        font-size: 1.7rem;
-
-    }
-
-    .faq-item h3 {
-
-        font-size: 1rem;
-
-    }
-
-}
-
-/* ==========================================================
-   RESPONSIVE - TABLET
-========================================================== */
-
-@media(max-width:992px) {
-
-    .contact-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 2.5rem;
-
-    }
-
-    .contact-card {
-
-        max-width: 500px;
-
-    }
-
-}
-
-/* ==========================================================
-   TEAM - CELULAR
-========================================================== */
-
-@media(max-width:768px) {
+    /* ==========================
+       CONTACT
+    ========================== */
 
     #contact {
-
         padding: var(--space-lg) 0;
-
     }
 
     #contact h2 {
-
         font-size: 2rem;
-
     }
 
     .contact-card {
-
         padding: 2rem;
-
     }
 
-}
 
-/* ==========================================================
-   FAQ - CELULARES PEQUEÑOS
-========================================================== */
-
-@media(max-width:480px) {
-
-    #contact h2 {
-
-        font-size: 1.7rem;
-
-    }
-
-    .contact-card {
-
-        padding: 1.5rem;
-
-    }
-
-    .contact-card .button {
-
-        width: 100%;
-
-        text-align: center;
-
-    }
-
-}
-
-/* ==========================================================
-   FOOTER - CELULARES PEQUEÑOS
-========================================================== */
-@media(max-width:768px) {
+    /* ==========================
+       FOOTER
+    ========================== */
 
     #footer {
-
         padding: var(--space-lg) 0 0;
-
     }
 
-    .footer-brand h2 {
-
-        font-size: 1.8rem;
-
+    #footer .container {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
-
-    .footer-nav li,
-    .footer-social li {
-
-        margin-bottom: .7rem;
-
-    }
-
-}
-
-
-@media(max-width:992px) {
 
     .footer-brand,
     .footer-nav,
     .footer-social {
-
-        display: flex;
-
-        flex-direction: column;
-
         align-items: center;
+        text-align: center;
+    }
 
+    .footer-brand h2 {
+        font-size: 1.8rem;
+    }
+
+    .footer-nav li,
+    .footer-social li {
+        margin-bottom: .7rem;
+    }
+
+}
+
+/* ==========================================================
+   RESPONSIVE - CELULAR PEQUEÑO
+========================================================== */
+
+@media (max-width: 480px) {
+
+    /* ==========================
+       GENERAL
+    ========================== */
+
+    .container {
+        width: 94%;
+    }
+
+
+    /* ==========================
+       HEADER
+    ========================== */
+
+    .brand h1 {
+        font-size: 1.7rem;
+    }
+
+    .brand p {
+        font-size: .9rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: .75rem;
+    }
+
+
+    /* ==========================
+       HERO
+    ========================== */
+
+    #hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-image {
+        height: 230px;
+    }
+
+
+    /* ==========================
+       ABOUT
+    ========================== */
+
+    .about-content h2 {
+        font-size: 1.7rem;
+    }
+
+
+    /* ==========================
+       SERVICES
+    ========================== */
+
+    #services h2 {
+        font-size: 1.7rem;
+    }
+
+
+    /* ==========================
+       TEAM
+    ========================== */
+
+    #team h2 {
+        font-size: 1.7rem;
+    }
+
+    .team-content {
+        padding: 1.2rem;
+        gap: .8rem;
+    }
+
+    .team-card img {
+        aspect-ratio: 1 / 1;
+    }
+
+
+    /* ==========================
+       FAQ
+    ========================== */
+
+    #faq h2 {
+        font-size: 1.7rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1rem;
+    }
+
+
+    /* ==========================
+       CONTACT
+    ========================== */
+
+    #contact h2 {
+        font-size: 1.7rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+    }
+
+    .contact-card .button {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE - CELULAR MUY PEQUEÑO
+========================================================== */
+
+@media (max-width: 400px) {
+
+    .brand h1 {
+        font-size: 1.6rem;
+    }
+
+    #hero h1,
+    .about-content h2,
+    #services h2,
+    #team h2,
+    #faq h2,
+    #contact h2 {
+        font-size: 1.6rem;
     }
 
 }

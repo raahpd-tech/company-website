@@ -227,6 +227,10 @@ nav {
 
 }
 
+.menu.is-open {
+    display: flex;
+}
+
 /* ==========================================================
    HERO
 ========================================================== */
@@ -1311,7 +1315,6 @@ nav {
 /* ==========================================================
    RESPONSIVE - CELULAR
 ========================================================== */
-
 @media (max-width: 768px) {
 
     /* ==========================
@@ -1328,9 +1331,10 @@ nav {
     ========================== */
 
     nav {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         gap: 1rem;
-        text-align: center;
     }
 
     .brand h1 {
@@ -1341,16 +1345,36 @@ nav {
         font-size: .95rem;
     }
 
+
+    /* ==========================
+       BOTÓN MENÚ
+    ========================== */
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    /* ==========================
+       MENÚ
+    ========================== */
+
     .menu {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: .8rem 1rem;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: .8rem;
+        width: 100%;
+    }
+
+    .menu.is-open {
+        display: flex;
     }
 
     .menu a {
         font-size: .95rem;
     }
+
 
 
     /* ==========================
@@ -1566,9 +1590,18 @@ nav {
 }
 
 
+
 /* ==========================================================
    RESPONSIVE - CELULAR PEQUEÑO
 ========================================================== */
+/* ==========================================================
+   BOTÓN MENÚ MÓVIL
+========================================================== */
+
+.menu-toggle {
+    display: none;
+}
+
 
 @media (max-width: 480px) {
 

@@ -2,7 +2,6 @@
 // MENÚ MÓVIL
 // ==========================================================
 
-
 const menuToggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector("#primary-menu");
 
@@ -19,6 +18,7 @@ menuToggle.addEventListener("click", () => {
 
 });
 
+
 // ==========================================================
 // CERRAR MENÚ AL SELECCIONAR UNA SECCIÓN
 // ==========================================================
@@ -33,7 +33,59 @@ menuLinks.forEach(link => {
 
         menuToggle.setAttribute("aria-expanded", "false");
 
-        menuToggle.setAttribute("aria-label", "Abrir menú");
+        menuToggle.setAttribute(
+            "aria-label",
+            "Abrir menú"
+        );
 
     });
+
+});
+
+
+// ==========================================================
+// CERRAR MENÚ CON ESCAPE
+// ==========================================================
+
+document.addEventListener("keydown", (event) => {
+
+    if (event.key === "Escape") {
+
+        menu.classList.remove("is-open");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        menuToggle.setAttribute(
+            "aria-label",
+            "Abrir menú"
+        );
+
+    }
+
+});
+
+
+// ==========================================================
+// CERRAR MENÚ AL HACER CLIC FUERA
+// ==========================================================
+
+document.addEventListener("click", (event) => {
+
+    const clickedOutsideMenu =
+        !menu.contains(event.target) &&
+        !menuToggle.contains(event.target);
+
+    if (clickedOutsideMenu) {
+
+        menu.classList.remove("is-open");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        menuToggle.setAttribute(
+            "aria-label",
+            "Abrir menú"
+        );
+
+    }
+
 });

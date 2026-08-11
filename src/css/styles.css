@@ -1168,9 +1168,24 @@ nav {
 
 }
 
-/* ==========================
+/* ==========================================================
    RESPONSIVE
-========================== */
+========================================================== */
+
+
+/* ==========================================================
+   BOTÓN MENÚ MÓVIL
+========================================================== */
+
+.menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+}
+
+
 /* ==========================================================
    RESPONSIVE - TABLET
 ========================================================== */
@@ -1308,13 +1323,13 @@ nav {
         grid-template-columns: 1.4fr 1fr 1fr;
         gap: var(--space-lg);
     }
-
 }
 
 
 /* ==========================================================
    RESPONSIVE - CELULAR
 ========================================================== */
+
 @media (max-width: 768px) {
 
     /* ==========================
@@ -1331,9 +1346,14 @@ nav {
     ========================== */
 
     nav {
+        position: relative;
+
+        display: flex;
         flex-direction: row;
+
         justify-content: space-between;
         align-items: center;
+
         gap: 1rem;
     }
 
@@ -1351,30 +1371,103 @@ nav {
     ========================== */
 
     .menu-toggle {
-        display: block;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+
+        background: transparent;
+
+        border: 1px solid var(--color-secondary);
+        border-radius: 8px;
+
+        color: var(--color-primary);
+
+        cursor: pointer;
+
+        font-size: 1.2rem;
+
+        transition:
+            background-color .2s ease,
+            border-color .2s ease;
+    }
+
+    .menu-toggle:hover {
+        background-color: var(--color-light);
     }
 
 
     /* ==========================
-       MENÚ
+       MENÚ MÓVIL
     ========================== */
 
     .menu {
         display: none;
-        flex-direction: column;
+
+        position: absolute;
+
+        top: calc(100% + .75rem);
+        right: 0;
+
+        width: 340px;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
         align-items: center;
-        gap: .8rem;
-        width: 100%;
+
+        gap: .2rem;
+
+        padding: .6rem;
+
+        background-color: var(--color-light);
+
+        border: 1px solid var(--color-accent);
+        border-radius: 16px;
+
+        box-shadow: 0 8px 25px rgba(45, 45, 45, .08);
+
+        z-index: 1000;
     }
 
     .menu.is-open {
         display: flex;
     }
 
-    .menu a {
-        font-size: .95rem;
+    .menu li {
+        width: auto;
+        list-style: none;
     }
 
+    .menu a {
+        display: block;
+
+        width: auto;
+
+        padding: .65rem .9rem;
+
+        color: var(--color-primary);
+
+        font-size: .95rem;
+
+        text-decoration: none;
+
+        border-radius: 10px;
+
+        transition:
+            background-color .2s ease,
+            color .2s ease;
+    }
+
+    .menu a:hover {
+        background-color: white;
+    }
 
 
     /* ==========================
@@ -1402,7 +1495,9 @@ nav {
 
     .hero-content {
         width: 100%;
+
         align-items: center;
+
         text-align: center;
     }
 
@@ -1586,22 +1681,12 @@ nav {
     .footer-social li {
         margin-bottom: .7rem;
     }
-
 }
-
 
 
 /* ==========================================================
    RESPONSIVE - CELULAR PEQUEÑO
 ========================================================== */
-/* ==========================================================
-   BOTÓN MENÚ MÓVIL
-========================================================== */
-
-.menu-toggle {
-    display: none;
-}
-
 
 @media (max-width: 480px) {
 
@@ -1626,11 +1711,23 @@ nav {
         font-size: .9rem;
     }
 
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+
+        font-size: 1.1rem;
+    }
+
     .menu {
-        gap: .7rem .9rem;
+        width: 290px;
+
+        padding: .5rem;
+
+        border-radius: 14px;
     }
 
     .menu a {
+        padding: .6rem .75rem;
         font-size: .9rem;
     }
 
@@ -1730,7 +1827,6 @@ nav {
     .footer-brand h2 {
         font-size: 1.6rem;
     }
-
 }
 
 
@@ -1740,9 +1836,27 @@ nav {
 
 @media (max-width: 400px) {
 
+    /* ==========================
+       HEADER
+    ========================== */
+
     .brand h1 {
         font-size: 1.6rem;
     }
+
+    .brand p {
+        font-size: .85rem;
+    }
+
+    .menu {
+        width: calc(100vw - 2rem);
+        right: 0;
+    }
+
+
+    /* ==========================
+       TÍTULOS
+    ========================== */
 
     #hero h1,
     .about-content h2,
@@ -1752,5 +1866,4 @@ nav {
     #contact h2 {
         font-size: 1.6rem;
     }
-
 }

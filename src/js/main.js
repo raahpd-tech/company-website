@@ -89,3 +89,52 @@ document.addEventListener("click", (event) => {
     }
 
 });
+
+// ==========================================================
+// FAQ - ACORDEÓN
+// ==========================================================
+
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(question => {
+
+    question.addEventListener("click", () => {
+
+        const faqItem = question.closest(".faq-item");
+
+        const isOpen = faqItem.classList.contains("is-open");
+
+
+        // Cerrar todos los FAQ
+
+        faqQuestions.forEach(otherQuestion => {
+
+            const otherItem =
+                otherQuestion.closest(".faq-item");
+
+            otherItem.classList.remove("is-open");
+
+            otherQuestion.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        });
+
+
+        // Abrir el seleccionado si estaba cerrado
+
+        if (!isOpen) {
+
+            faqItem.classList.add("is-open");
+
+            question.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+
+        }
+
+    });
+
+});

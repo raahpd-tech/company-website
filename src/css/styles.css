@@ -88,6 +88,7 @@
 html {
 
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 
 }
 
@@ -154,6 +155,10 @@ body {
 header {
 
     background-color: var(--color-white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
 
 }
 
@@ -211,13 +216,11 @@ nav {
 }
 
 .menu a {
-
-    color: var(--color-primary);
-
-    font-weight: 600;
-
-    transition: color var(--transition-fast);
-
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .menu a:hover,
@@ -225,6 +228,12 @@ nav {
 
     color: var(--color-secondary);
 
+}
+
+.menu a.active {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    font-weight: 600;
 }
 
 .menu.is-open {
@@ -1769,8 +1778,7 @@ nav {
         display: grid;
 
         grid-template-columns:
-            minmax(0, 1fr)
-            minmax(0, 1fr);
+            minmax(0, 1fr) minmax(0, 1fr);
 
         gap: 2rem;
 
@@ -1816,8 +1824,7 @@ nav {
         display: grid;
 
         grid-template-columns:
-            minmax(0, 1fr)
-            minmax(0, 1fr);
+            minmax(0, 1fr) minmax(0, 1fr);
 
         gap: .65rem 1.5rem;
 
@@ -2047,8 +2054,7 @@ nav {
 
     .footer-nav ul {
         grid-template-columns:
-            minmax(0, 1fr)
-            minmax(0, 1fr);
+            minmax(0, 1fr) minmax(0, 1fr);
 
         gap: .6rem .8rem;
 

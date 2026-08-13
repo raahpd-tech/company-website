@@ -138,3 +138,56 @@ faqQuestions.forEach(question => {
     });
 
 });
+
+// ==========================================================
+// NAVEGACIÓN ACTIVA SEGÚN LA SECCIÓN VISIBLE
+// ==========================================================
+
+const sections = document.querySelectorAll("main section[id]");
+const navigationLinks = document.querySelectorAll(".menu a");
+
+const sectionObserver = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                navigationLinks.forEach(link => {
+
+                    link.classList.remove("active");
+
+                    link.removeAttribute("aria-current");
+
+                });
+
+                const activeLink = document.querySelector(
+                    `.menu a[href="#${entry.target.id}"]`
+                );
+
+                if (activeLink) {
+
+                    activeLink.classList.add("active");
+
+                    activeLink.setAttribute(
+                        "aria-current",
+                        "location"
+                    );
+
+                }
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.5
+    }
+);
+
+sections.forEach(section => {
+
+    sectionObserver.observe(section);
+
+});

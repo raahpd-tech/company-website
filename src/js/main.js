@@ -156,7 +156,6 @@ const sectionObserver = new IntersectionObserver(
                 navigationLinks.forEach(link => {
 
                     link.classList.remove("active");
-
                     link.removeAttribute("aria-current");
 
                 });
@@ -182,7 +181,7 @@ const sectionObserver = new IntersectionObserver(
 
     },
     {
-        threshold: 0.5
+        threshold: 0.2
     }
 );
 

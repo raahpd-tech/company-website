@@ -170,7 +170,7 @@ const sectionObserver = new IntersectionObserver(
 
                     activeLink.setAttribute(
                         "aria-current",
-                        "location"
+                        "page"
                     );
 
                 }

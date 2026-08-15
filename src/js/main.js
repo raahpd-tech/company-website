@@ -190,3 +190,37 @@ sections.forEach(section => {
     sectionObserver.observe(section);
 
 });
+
+// ==========================================================
+// ANIMACIONES DE ENTRADA - SERVICES
+// ==========================================================
+
+const animatedElements =
+    document.querySelectorAll(".service-card");
+
+const animationObserver = new IntersectionObserver(
+    (entries, observer) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("is-visible");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+animatedElements.forEach(element => {
+
+    animationObserver.observe(element);
+
+});

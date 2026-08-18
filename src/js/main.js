@@ -196,7 +196,9 @@ sections.forEach(section => {
 // ==========================================================
 
 const animatedElements =
-    document.querySelectorAll(".service-card");
+    document.querySelectorAll(
+        ".service-card, .about-image, .about-content"
+    );
 
 const animationObserver = new IntersectionObserver(
     (entries, observer) => {

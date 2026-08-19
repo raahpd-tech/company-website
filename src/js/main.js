@@ -197,7 +197,7 @@ sections.forEach(section => {
 
 const animatedElements =
     document.querySelectorAll(
-        ".service-card, .about-image, .about-content"
+        ".service-card, .about-image, .about-content, .team-card, .contact-card"
     );
 
 const animationObserver = new IntersectionObserver(
@@ -226,3 +226,4 @@ animatedElements.forEach(element => {
     animationObserver.observe(element);
 
 });
+

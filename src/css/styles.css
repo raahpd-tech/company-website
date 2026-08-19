@@ -697,6 +697,30 @@ nav {
 
 }
 
+/* ==========================================================
+   ANIMACIÓN - TEAM
+========================================================== */
+
+.team-card {
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+
+}
+
+.team-card.is-visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
 /* ==========================
    FOTO
 ========================== */
@@ -1092,6 +1116,30 @@ nav {
 .contact-card .button {
     align-self: flex-start;
     padding: .85rem 1.6rem;
+}
+
+/* ==========================================================
+   ANIMACIÓN - CONTACT
+========================================================== */
+
+.contact-card {
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+
+}
+
+.contact-card.is-visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
 }
 
 /* ==========================

@@ -1602,6 +1602,8 @@ nav {
 
         min-width: 0;
 
+        height: 380px;
+
     }
 
     .hero-image {
@@ -2876,4 +2878,131 @@ nav {
 
     }
 
+}
+
+/* ==========================================================
+   CORRECCIONES FINALES DE OVERFLOW
+========================================================== */
+
+/* ----------------------------------------------------------
+   BOX SIZING
+   ---------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* ----------------------------------------------------------
+   IMÁGENES Y MULTIMEDIA
+   No modifica sus proporciones ni sus alturas originales.
+   ---------------------------------------------------------- */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 100%;
+}
+
+
+/* ----------------------------------------------------------
+   CONTENEDOR
+   IMPORTANTE:
+   Conservamos el comportamiento original de .container.
+   ---------------------------------------------------------- */
+
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ----------------------------------------------------------
+   FLEXBOX
+   Evita que los elementos internos obliguen al contenedor
+   a crecer más allá del viewport.
+   ---------------------------------------------------------- */
+
+.hero-content,
+.hero-image,
+.about-image,
+.about-content,
+.contact-info,
+.contact-card,
+.footer-brand,
+.footer-nav,
+.footer-social {
+    min-width: 0;
+}
+
+
+/* ----------------------------------------------------------
+   GRIDS
+   minmax(0, 1fr) permite que las columnas puedan encogerse.
+   ---------------------------------------------------------- */
+
+.services-grid,
+.team-grid,
+.contact-grid {
+    min-width: 0;
+}
+
+.service-card,
+.team-card {
+    min-width: 0;
+}
+
+
+/* ----------------------------------------------------------
+   TEXTOS
+   Evita que palabras o URLs extremadamente largas
+   provoquen overflow.
+   ---------------------------------------------------------- */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+    overflow-wrap: break-word;
+}
+
+
+/* ----------------------------------------------------------
+   TABLA DE HORARIOS
+   La tabla SÍ puede ser más ancha que el móvil,
+   pero únicamente dentro de .table-wrapper.
+   ---------------------------------------------------------- */
+
+.table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.schedule-table {
+    max-width: none;
+}
+
+
+/* ----------------------------------------------------------
+   ELEMENTOS INTERACTIVOS
+   ---------------------------------------------------------- */
+
+button,
+input,
+textarea,
+select {
+    max-width: 100%;
 }

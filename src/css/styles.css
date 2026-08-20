@@ -137,6 +137,30 @@ body {
 }
 
 /* ==========================================================
+   UTILIDADES DE ACCESIBILIDAD
+========================================================== */
+
+.sr-only {
+
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+
+    border: 0;
+
+}
+
+/* ==========================================================
    CONTENEDOR GLOBAL
 ========================================================== */
 
@@ -794,6 +818,235 @@ nav {
     line-height: 1.7;
 
 }
+
+/* ==========================================================
+   HORARIOS
+========================================================== */
+
+#horarios {
+
+    padding: var(--space-xl) 0;
+
+}
+
+#horarios .container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: var(--space-md);
+
+}
+
+
+/* ==========================================================
+   ENCABEZADO
+========================================================== */
+
+#horarios h2 {
+
+    font-size: 2.5rem;
+
+    color: var(--color-primary);
+
+    text-align: center;
+
+    line-height: 1.2;
+
+    max-width: 700px;
+
+}
+
+#horarios .section-description {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    line-height: 1.8;
+
+    color: var(--color-text);
+
+}
+
+
+/* ==========================================================
+   TABLA
+========================================================== */
+
+.table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    background-color: var(--color-white);
+
+    padding: var(--space-xs);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    -webkit-overflow-scrolling: touch;
+
+}
+
+.schedule-table {
+
+    width: 100%;
+
+    min-width: 700px;
+
+    border-collapse: separate;
+
+    border-spacing: 6px;
+
+    text-align: center;
+
+}
+
+
+/* ==========================================================
+   ENCABEZADOS
+========================================================== */
+
+.schedule-table th {
+
+    padding: var(--space-sm);
+
+    background-color: var(--color-primary);
+
+    color: var(--color-white);
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+
+    border-radius: var(--radius-sm);
+
+}
+
+.schedule-table .th-time {
+
+    background-color: var(--color-secondary);
+
+}
+
+
+/* ==========================================================
+   HORARIOS
+========================================================== */
+
+.time-slot {
+
+    padding: var(--space-xs) var(--space-sm);
+
+    background-color: var(--color-secondary);
+
+    color: var(--color-white);
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    border-radius: var(--radius-sm);
+
+}
+
+
+/* ==========================================================
+   CELDAS
+========================================================== */
+
+.schedule-table td {
+
+    height: 52px;
+
+    padding: var(--space-xs);
+
+    background-color: var(--color-light);
+
+    color: var(--color-text);
+
+    vertical-align: middle;
+
+    border-radius: var(--radius-sm);
+
+    transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast);
+
+}
+
+.schedule-table td:hover:not(.empty-slot) {
+
+    background-color: var(--color-accent);
+
+    color: var(--color-black);
+
+}
+
+.class-tag {
+
+    display: inline-block;
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+}
+
+.empty-slot {
+
+    background-color: var(--color-light);
+
+    opacity: .5;
+
+}
+
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+.horarios-cta {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: var(--space-sm);
+
+    margin-top: var(--space-sm);
+
+    text-align: center;
+
+}
+
+.horarios-cta p {
+
+    margin: 0;
+
+    font-size: .95rem;
+
+    color: var(--color-text);
+
+}
+
 
 /* ==========================
    FAQ
@@ -1462,6 +1715,7 @@ nav {
     }
 
 }
+
 
 
 /* ==========================================================
@@ -2249,35 +2503,164 @@ nav {
 
 }
 
-
 /* ==========================================================
-   ANIMACIÓN - ABOUT
+   RESPONSIVE - HORARIOS
 ========================================================== */
 
-.about-image,
-.about-content {
+/* ==========================================================
+   TABLET
+========================================================== */
 
-    opacity: 0;
+@media (max-width: 992px) {
 
-    transform: translateY(25px);
+    #horarios {
+        padding: var(--space-lg) 0;
+    }
 
-    transition:
-        opacity .7s ease,
-        transform .7s ease;
+    #horarios h2 {
+        font-size: 2.2rem;
+    }
+
+    .schedule-table {
+        min-width: 680px;
+        border-spacing: 5px;
+    }
+
+    .schedule-table th {
+        padding: .85rem .65rem;
+        font-size: .85rem;
+    }
+
+    .schedule-table td {
+        height: 50px;
+        padding: .45rem;
+    }
+
+    .class-tag,
+    .time-slot {
+        font-size: .8rem;
+    }
 
 }
 
-.about-image.is-visible,
-.about-content.is-visible {
 
-    opacity: 1;
+/* ==========================================================
+   TABLET PEQUEÑO / CELULAR
+========================================================== */
 
-    transform: translateY(0);
+@media (max-width: 768px) {
+
+    #horarios h2 {
+        font-size: 2rem;
+    }
+
+    #horarios .section-description {
+        font-size: 1rem;
+    }
+
+    .table-wrapper {
+        padding: .35rem;
+    }
+
+    .schedule-table {
+        min-width: 650px;
+        border-spacing: 4px;
+    }
+
+    .schedule-table th {
+        padding: .7rem .5rem;
+        font-size: .78rem;
+        letter-spacing: .05em;
+    }
+
+    .schedule-table td {
+        height: 48px;
+        padding: .4rem;
+    }
+
+    .class-tag,
+    .time-slot {
+        font-size: .75rem;
+    }
 
 }
 
-.about-content.is-visible {
 
-    transition-delay: .15s;
+/* ==========================================================
+   CELULAR
+========================================================== */
+
+@media (max-width: 480px) {
+
+    #horarios h2 {
+        font-size: 1.7rem;
+    }
+
+    #horarios .section-description {
+        font-size: .95rem;
+        line-height: 1.7;
+    }
+
+    .table-wrapper {
+        padding: .25rem;
+        border-radius: var(--radius-sm);
+    }
+
+    .schedule-table {
+        min-width: 620px;
+        border-spacing: 3px;
+    }
+
+    .schedule-table th {
+        padding: .6rem .4rem;
+        font-size: .72rem;
+        letter-spacing: .03em;
+    }
+
+    .schedule-table td {
+        height: 46px;
+        padding: .35rem .3rem;
+    }
+
+    .time-slot {
+        padding: .4rem .55rem;
+        font-size: .72rem;
+    }
+
+    .class-tag {
+        font-size: .72rem;
+        line-height: 1.2;
+    }
+
+    .horarios-cta {
+        width: 100%;
+    }
+
+    .horarios-cta .button {
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================================
+   CELULAR MUY PEQUEÑO
+========================================================== */
+
+@media (max-width: 400px) {
+
+    #horarios h2 {
+        font-size: 1.6rem;
+    }
+
+    .schedule-table {
+        min-width: 600px;
+    }
+
+    .schedule-table th,
+    .class-tag,
+    .time-slot {
+        font-size: .7rem;
+    }
 
 }

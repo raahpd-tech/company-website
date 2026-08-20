@@ -2697,3 +2697,36 @@ nav {
     }
 
 }
+
+/* ==========================================================
+   CORRECCIÓN OVERFLOW / DESBORDAMIENTO MÓVIL
+========================================================== */
+
+html,
+body {
+
+    max-width: 100%;
+
+    overflow-x: hidden;
+
+}
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+
+.table-wrapper {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+
+}

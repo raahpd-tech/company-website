@@ -2698,42 +2698,46 @@ nav {
 
 }
 
-/* ==========================================================
-   AJUSTE DE ANCHOS Y CONTENEDORES (FIX OVERFLOW)
-========================================================== */
+/* ==========================================================================
+   MODULE: OVERFLOW & RESPONSIVE CORRECTIONS
+   ========================================================================== */
 
-*,
-*::before,
-*::after {
+/* --- Global Layout Bounds --- */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
+/* --- Box-Sizing & Media Reset --- */
+*, *::before, *::after {
     box-sizing: border-box;
-
 }
 
+img, picture, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Container Homologation --- */
 .container {
-
     width: 100%;
+    max-width: var(--container-max-width, 1200px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-md, 1.25rem);
+    padding-right: var(--space-md, 1.25rem);
+}
 
+/* --- Form Elements Constraint --- */
+input, textarea, select, button {
     max-width: 100%;
-
-    padding-left: 1rem;
-
-    padding-right: 1rem;
-
 }
 
-.schedule-table {
-
-    min-width: 600px;
-
-    width: 100%;
-
-}
-
-.services-grid,
-.team-grid,
+/* --- Grid Safe Breakpoints --- */
+.services-grid, 
+.team-grid, 
+.faq-grid, 
 .contact-grid {
-
-    max-width: 100%;
-
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 }
